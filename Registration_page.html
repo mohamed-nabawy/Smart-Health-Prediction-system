@@ -1,0 +1,141 @@
+<html>
+    <head>
+    
+        <title>Health Prediction App</title>
+        <link rel="icon" href="images/icon.png">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+      <link rel="stylesheet" type="text/css" href="css/materialize.css"/>
+        <!-- <link rel="stylesheet" type="text/css" href="css/style.css"/> -->
+        <link rel="stylesheet" type="text/css" href="icons/icons.css"/>
+        <script src="js/jquery-3.1.1.min.js"></script>
+        <script src="js/materialize.js"></script>
+        <script src="js/newjavascript.js"></script>
+        
+        <link href='https://fonts.google.com/?category=Serif,Sans+Serif,Monospace&selection.family=Roboto+Slab' rel='stylesheet'>
+        <link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet'>
+        
+        
+        
+    <!--    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css"> <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+   <script> $(document).ready(function() { $("#datepicker").datepicker(); }); </script> -->
+    </head>
+    
+    <body>
+        <center>
+            <div>
+        <img class="responsive-img" alt="header" src="images/coverphoto.jpg" />
+        </div>
+        </center>
+
+        
+        
+        
+        <div class="row">
+        <form class="col s12" method="post" id="register" action="Registration_page.php">
+        <div class="row">
+        <center>
+            <h4>Have a Doctor in your Pocket for Free!</h4><br>
+                  <div class="input-field col s12" >
+                  <i class="material-icons prefix">input</i>
+                  <input required id="first_name" name="first_name" type="text" class="validate" style="width:70%">
+                  <label for="FirstName">First Name</label>
+                  </div>
+            
+                  <div class="input-field col s12" >
+                  <i class="material-icons prefix">input</i>
+                  <input required id="last_name" type="text" name="last_name" class="validate" style="width:70%">
+                  <label for="LastName">Last Name</label>
+                  </div>
+            
+                  <div class="input-field col s12" >
+                  <i class="material-icons prefix">perm_identity</i>
+                  <input required id="email" type="email" name="email" class="validate" style="width:70%">
+                  <label for="email">Email</label>
+                  </div>
+            
+            
+                  <div class="input-field col s12" >
+                  <i class="material-icons prefix">lock_outline</i>
+                  <input required id="password" name="password" type="password" class="validate" style="width:70%">
+                  <span id="password_error" class="error hide">Enter your password</span>
+                  <label for="password">Password</label>
+                  </div>
+            
+            
+                  <div class="input-field col s12" >
+                  <i class="material-icons prefix">https</i>
+                  <input required id="password_confirmation" name="password_confirmation" type="password" class="validate" style="width:70%">
+                  <span id="conf_password_error" class="error hide">Please confirm your password</span>
+                  <label for="password_confirmation">Password confirmation</label>
+                  </div>
+            
+                    <br>
+                    <label class="labels">Gender</label><br>
+                    <br>
+                    <input class="with-gap" name="gender" type="radio" id="male" value="Male" />
+                    <label for="male"> Male &nbsp; &nbsp; </label>
+                    <br>
+                    <input class="with-gap" name="gender" type="radio" id="female" value="Female"  />
+                    <label for="female"> Female</label>
+                    <br><br><br>
+                    
+                    
+                    <div class="input-field col s12" >
+                  <i class="material-icons prefix">today</i>
+                  <input id="DOB" name="DOB" type="date" class="datepicker" style="width:70%">
+                  <label for="DOB">Select your Date of Birth</label>
+                  <!-- <input required id="DateofBirth" name="DOB" type="date" class="validate" style="width:70%">
+                  <label for="DateofBirth">Select your Date of Birth</label> -->
+                  </div>
+             
+            
+                 
+                 <!--  <div class="input-field col s12" >
+                       <label class="labels" style="left: 45%">Select your Date of Birth</label><br>
+                       <input type="date" name="DOB" style="width: 70%"/> -->
+                       
+                 <!--   <input id="datepicker" name="DOB"/>
+                    <label class="labels" >Select your Date of Birth</label> -->
+                    
+                   <!-- <select name="age" style="width: 70%">     
+                    <option value="" disabled selected>Select your Age</option>
+                    <option value="ZeroTwo">0-2 Years</option>
+                    <option value="ThreeSix">3-6 Years</option>
+                    <option value="SevenTwelve">7-12 Years</option>
+                    <option value="ThirteenSeventeen">13-17 Years</option>
+                    <option value="EighteenTwentyFour">18-24 Years</option>
+                    <option value="TwetnyFiveThirtyFour">25-34 Years</option>
+                    <option value="ThrityFiveFourtyFour">35-44 Years</option>
+                    <option value="FourtyFiveFiftyFour">45-54 Years</option>
+                    <option value="FiftyFiveSixtyFour">55-64 Years</option>
+                    <option value="OverSixtyFive">Over 65 Years</option>
+                    </select>
+                    <label class="labels">Age</label> 
+                    </div>   -->
+     
+                           
+                    
+                    
+                    
+                  <div class="input-field col s12" >
+                  <i class="material-icons prefix">my_location</i>
+                  <input required id="region" name="region" type="text" class="validate" style="width:70%">
+                  <label for="region">Region</label>
+                  </div>
+                  
+
+                   
+                  <button class="btn waves-effect waves-light btn" type="submit" name="action">Create My Account
+                  <i class="material-icons left">thumb_up</i>
+                 </button>
+        </center>
+        </div>
+        </form>
+        </div>
+    
+    
+   
+    </body>
+</html>
